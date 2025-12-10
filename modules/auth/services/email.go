@@ -14,9 +14,10 @@ import (
 // SendEmail kirim email dengan subject dan body HTML
 func SendEmail(to, subject, body string) error {
 	from := os.Getenv("SMTP_FROM")
+	name := os.Getenv("SMTP_NAME")
 
 	m := gomail.NewMessage()
-	m.SetHeader("From", m.FormatAddress(from, "Elang Merah Asistant - No Reply"))
+	m.SetHeader("From", m.FormatAddress(from, name))
 	m.SetHeader("To", to)
 	m.SetHeader("Subject", subject)
 	m.SetBody("text/html", body)
