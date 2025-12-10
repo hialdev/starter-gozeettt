@@ -5,14 +5,6 @@
     "icon": "solar:widget-2-bold-duotone",
     "settings": [
       {
-        "name": "Theme Color",
-        "set_key": "dash.theme",
-        "set_value": "green",
-        "set_type": "select",
-        "set_options": "green, blue, purple, red, yellow",
-        "is_urgent": true
-      },
-      {
         "name": "Logo Dashboard",
         "set_key": "dash.logo",
         "set_value": "uploads/settings/1764779126166404000_1082b233d0734d9db2d58960d19af578_Zeettt.com.svg",
